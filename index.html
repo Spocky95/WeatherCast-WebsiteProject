@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WeatherCast_AJP</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-info sticky-top">
+  <div class="container-fluid">
+		<a class="navbar-brand" href="#"> <img src="img/Weather_forecast/logo2.png" width="168px" height="77px" alt=""></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#krotkoterminowa">Krótkoterminowa</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#dlugoterminowa">Długoterminowa</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#footer">Kontakt</a>
+				</li>
+			</ul>
+		</div>
+  </div>
+</nav>
+<!--- Slider -->
+<div id="slides" class="carousel slide" data-ride="carousel">
+	<ol class="carousel-indicators">
+		<li data-target="#slides" data-slide-to="0" class="active"></li>
+		<li data-target="#slides" data-slide-to="1"></li>
+		<li data-target="#slides" data-slide-to="2"></li>
+		<li data-target="#slides" data-slide-to="3"></li>
+	</ol>
+	<div class="carousel-inner">
+		<!-- slider 1-->
+		<div class="carousel-item active">
+			<img src="img/Weather_forecast/Carousel2.png" class="img-fluid" alt="AJP-logo-responsive" width="100%">
+			<div class="carousel-caption">
+				<h1 style="font-size:6vw;">WeatherCast</h1>
+			</div>
+		</div>
+		<!-- slider 2-->
+		<div class="carousel-item">
+			<img src="img/Weather_forecast/Carousel3.jpg" class="img-fluid" alt="Bootstrap-responsive" width="100%">
+			<div class="carousel-caption">
+				<h1 style="font-size:6vw;">WeatherCast</h1>
+			</div>
+		</div>		
+		<!-- slider 3-->
+		<div class="carousel-item">
+			<img src="img/Weather_forecast/Carousel1.jpg" class="img-fluid" alt="Bootstrap-responsive" width="100%">
+			<div class="carousel-caption">
+				<h1 style="font-size:6vw;">WeatherCast</h1>
+			</div>
+		</div>
+		<!-- slider 4-->
+		<div class="carousel-item">
+			<img src="img/Weather_forecast/Carousel4.png" class="img-fluid" alt="Bootstrap-responsive" width="100%">
+			<div class="carousel-caption">
+				<h1 style="font-size:6vw;">WeatherCast</h1>
+			</div>
+		</div>		
+	</div>
+</div>
+<hr><hr>
+<!--Temporary-->
+<!--Jumbotron-->
+<div class="container-fluid">
+	<div class="jumbotron">
+		<div class="row">
+			<div class="col">
+				<h1 style="font-size:4vw;">WeatherCast</h1>
+				<p>Nasza pogoda zawsze sie sprawdza!.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+					Explicabo, placeat similique quae possimus veniam, expedita nesciunt sapiente 
+					voluptates consectetur ipsum amet cupiditate nobis delectus magnam enim neque 
+					accusamus repudiandae dolorem. Sed, ipsum voluptates, doloribus molestias porro 
+					culpa deleniti exercitationem ex laboriosam dolorum nulla nesciunt error veritatis. 
+					Natus dolorum eum veritatis consequuntur, magnam dolore cumque cupiditate ducimus, 
+					nostrum tempora minus soluta velit. At blanditiis dolorum accusamus est omnis nesciunt porro? 
+					Cumque quas veritatis doloremque temporibus totam facilis tempore asperiores officiis, 
+					adipisci modi animi maiores natus tenetur, sequi vitae iure itaque similique. Deserunt 
+					iusto vero odit placeat quaerat consequatur amet nihil quidem?</p>
+			</div>
+			<div class="col text-center d-none d-lg-block">
+				<p class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77312.98920326754!2d15.17051322425736!3d52.731634592519704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47071f0a5a4118b7%3A0x5dd10df3cb5799dd!2sGorz%C3%B3w%20Wielkopolski!5e0!3m2!1spl!2spl!4v1651509333654!5m2!1spl!2spl" height="500px" width="90%" style="border: 1px;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+			</div>
+		</div>
+	</div>
+</div>
+<hr><hr>
+<!--Temporary-->
+<!--Cards Carousel-->
+  <section id="krotkoterminowa" class="pt-5 pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h3 class="mb-3">Pogoda na najbliższe dni:</h3>
+            </div>
+            <div class="col-6 text-right">
+				<a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+					<i class="fa fa-arrow-left"></i>
+                </a>
+                <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+					<i class="fa fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="col-12">
+				<div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel" data-interval="false">
+					<div class="carousel-inner">
+						<!--First cardpage-->
+						<div class="carousel-item active">
+							<h3>Poniedziałek - 02.05.2022</h3>
+                            <div class="row">
+								<div class="col-md-4 mb-3">
+										<!--Indeks UV 
+										Niski: rgb(22, 187, 77);
+										Średni: rgb(243, 193, 29);
+										Wysoki: rgb(177, 105, 10);
+										Bardzo wysoki: rgb(216, 25, 25);
+										Blank: rgb(198, 190, 190);
+										-->
+                                    <div class="card">
+										<h4 class="card-title text-center pt-2"><b>Poranek</b></h4>
+										<img class="img-fluid" alt="100%x280" src="img/Weather_forecast/Sun.png">
+                                        <div class="card-body">
+											<p class="card-text">Słonecznie</p>
+											<div class="container-fluid my-6 pb-4 border">
+												<p>Indeks UV: Bardzo wysoki</p>
+												<div class="w-25 p-2 border-bottom" style="background-color: rgb(198, 190, 190);"></div>
+												<div class="w-50 p-2 border-bottom" style="background-color: rgb(198, 190, 190);"></div>
+												<div class="w-75 p-2 border-bottom" style="background-color: rgb(198, 190, 190);"></div>
+												<div class="w-80 p-2" style="background-color: rgb(216, 25, 25);"></div>
+											</div>
+											<p class="card-text">Temperatura: ...</p>
+											<p class="card-text">Wilgotność: ...</p>
+											<p class="card-text">Wiart: ...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+									<div class="card">
+										<h4 class="card-title text-center pt-2"><b>Popołudnie</b></h4>
+                                        <img class="img-fluid" alt="100%x280" src="img/Weather_forecast/Cloudy.png">
+                                        <div class="card-body">
+											<p class="card-text">Pochmurnie</p>
+											<div class="container-fluid my-6 pb-4 border">
+												<p>Indeks UV: Wysoki</p>
+												<div class="w-25 p-2 border-bottom" style="background-color: rgb(198, 190, 190);"></div>
+												<div class="w-50 p-2 border-bottom" style="background-color: rgb(198, 190, 190);"></div>
+												<div class="w-75 p-2 border-bottom" style="background-color: rgb(177, 105, 10);"></div>
+												<div class="w-80 p-2" style="background-color: rgb(198, 190, 190);"></div>
+											</div>
+											<p class="card-text">Temperatura: ...</p>
+											<p class="card-text">Wilgotność: ...</p>
+											<p class="card-text">Wiart: ...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+									<div class="card">
+										<h4 class="card-title text-center pt-2"><b>Noc</b></h4>
+										<img class="img-fluid" alt="100%x280" src="img/Weather_forecast/Night.png">
+                                        <div class="card-body">
+											<p class="card-text">Czyste niebo</p>
+											<div class="container-fluid my-6 pb-4 border">
+												<p>Indeks UV: Średni&nbsp;</p>
+												<div class="w-25 p-2 border-bottom" style="background-color: rgb(198, 190, 190);"></div>
+												<div class="w-50 p-2 border-bottom" style="background-color: rgb(243, 193, 29);"></div>
+												<div class="w-75 p-2 border-bottom" style="background-color: rgb(198, 190, 190);"></div>
+												<div class="w-80 p-2" style="background-color: rgb(198, 190, 190);"></div>
+											</div>
+                                            <p class="card-text">Temperatura: ...</p>
+											<p class="card-text">Wilgotność: ...</p>
+											<p class="card-text">Wiart: ...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						<!--Second cardpage-->
+                        <div class="carousel-item">
+							<h3>Wtorek - 03.05.2022</h3>
+                            <div class="row">
+								<div class="col-md-4 mb-3">
+									<div class="card">
+										<h4 class="card-title text-center pt-2"><b>Poranek</b></h4>
+										<img class="img-fluid" alt="100%x280" src="img/Weather_forecast/Cloudy.png">
+										<div class="card-body">
+											<p class="card-text">Pochmurnie</p>
+											<div class="container-fluid my-6 pb-4 border">
+												<p>Indeks UV: Średni</p>
+												<div class="w-25 p-2 border-bottom" style="background-color: rgb(198, 190, 190);"></div>
+												<div class="w-50 p-2 border-bottom" style="background-color: rgb(243, 193, 29)"></div>
+												<div class="w-75 p-2 border-bottom" style="background-color: rgb(198, 190, 190);"></div>
+												<div class="w-80 p-2" style="background-color: rgb(198, 190, 190);"></div>
+											</div>
+                                            <p class="card-text">Temperatura: ...</p>
+											<p class="card-text">Wilgotność: ...</p>
+											<p class="card-text">Wiart: ...</p>
+										</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+									<div class="card">
+										<h4 class="card-title text-center pt-2"><b>Popołudnie</b></h4>
+										<img class="img-fluid" alt="100%x280" src="img/Weather_forecast/Cloudy.png">
+                                        <div class="card-body">
+											<p class="card-text">Pochmurnie</p>
+											<div class="container-fluid my-6 pb-4 border">
+												<p>Indeks UV: Niski</p>
+												<div class="w-25 p-2 border-bottom" style="background-color: rgb(22, 187, 77);"></div>
+												<div class="w-50 p-2 border-bottom" style="background-color: rgb(198, 190, 190);"></div>
+												<div class="w-75 p-2 border-bottom" style="background-color: rgb(198, 190, 190);"></div>
+												<div class="w-80 p-2" style="background-color: rgb(198, 190, 190);"></div>
+											</div>
+                                            <p class="card-text">Temperatura: ...</p>
+											<p class="card-text">Wilgotność: ...</p>
+											<p class="card-text">Wiart: ...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+									<div class="card">
+										<h4 class="card-title text-center pt-2"><b>Noc</b></h4>
+										<img class="img-fluid" alt="100%x280" src="img/Weather_forecast/Snowy.png">
+                                        <div class="card-body">
+											<p class="card-text">Opady śniegu</p>
+											<div class="container-fluid my-6 pb-4 border">
+												<p>Indeks UV: Niski</p>
+												<div class="w-25 p-2 border-bottom" style="background-color: rgb(22, 187, 77);"></div>
+												<div class="w-50 p-2 border-bottom" style="background-color: rgb(198, 190, 190);"></div>
+												<div class="w-75 p-2 border-bottom" style="background-color: rgb(198, 190, 190);"></div>
+												<div class="w-80 p-2" style="background-color: rgb(198, 190, 190);"></div>
+											</div>
+                                            <p class="card-text">Temperatura: ...</p>
+											<p class="card-text">Wilgotność: ...</p>
+											<p class="card-text">Wiart: ...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						<!--Third cardpage-->
+                        <div class="carousel-item">
+							<h3>Środa - 04.05.2022</h3>
+                            <div class="row">
+								<div class="col-md-4 mb-3">
+									<div class="card">
+										<h4 class="card-title text-center pt-2"><b>Poranek</b></h4>
+										<img class="img-fluid" alt="100%x280" src="img/Weather_forecast/Rainy.png">
+                                        <div class="card-body">
+											<p class="card-text">Deszczowo</p>
+											<div class="container-fluid my-6 pb-4 border">
+												<p>Indeks UV: Niski</p>
+												<div class="w-25 p-2 border-bottom" style="background-color: rgb(22, 187, 77);"></div>
+												<div class="w-50 p-2 border-bottom" style="background-color: rgb(198, 190, 190);"></div>
+												<div class="w-75 p-2 border-bottom" style="background-color: rgb(198, 190, 190);"></div>
+												<div class="w-80 p-2" style="background-color: rgb(198, 190, 190);"></div>
+											</div>
+                                            <p class="card-text">Temperatura: ...</p>
+											<p class="card-text">Wilgotność: ...</p>
+											<p class="card-text">Wiart: ...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+									<div class="card">
+										<h4 class="card-title text-center pt-2"><b>Popołudnie</b></h4>
+										<img class="img-fluid" alt="100%x280" src="img/Weather_forecast/Rainbow.png">
+                                        <div class="card-body">
+											<p class="card-text">Słonecznie</p>
+											<div class="container-fluid my-6 pb-4 border">
+												<p>Indeks UV: Średni  </p>
+												<div class="w-25 p-2 border-bottom" style="background-color: rgb(168, 160, 160);"></div>
+												<div class="w-50 p-2 border-bottom" style="background-color: rgb(243, 193, 29)"></div>
+												<div class="w-75 p-2 border-bottom" style="background-color: rgb(168, 160, 160);"></div>
+												<div class="w-80 p-2" style="background-color: rgb(168, 160, 160);"></div>
+											</div>
+                                            <p class="card-text">Temperatura: ...</p>
+											<p class="card-text">Wilgotność: ...</p>
+											<p class="card-text">Wiart: ...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+									<div class="card">
+										<h4 class="card-title text-center pt-2"><b>Noc</b></h4>
+										<img class="img-fluid" alt="100%x280" src="img/Weather_forecast/Stormy.png">
+                                        <div class="card-body">
+                                            <p class="card-text">Burzowo</p>
+											<div class="container-fluid my-6 pb-4 border">
+												<p>Indeks UV: Niski</p>
+												<div class="w-25 p-2 border-bottom" style="background-color: rgb(22, 187, 77);"></div>
+												<div class="w-50 p-2 border-bottom" style="background-color: rgb(168, 160, 160);"></div>
+												<div class="w-75 p-2 border-bottom" style="background-color: rgb(168, 160, 160);"></div>
+												<div class="w-80 p-2" style="background-color: rgb(168, 160, 160);"></div>
+											</div>
+                                            <p class="card-text">Temperatura: ...</p>
+											<p class="card-text">Wilgotność: ...</p>
+											<p class="card-text">Wiart: ...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Long term-->
+<hr><hr>
+<section id="dlugoterminowa">
+<div class="container-fluid text-center"><h3>Pogoda długoterminowa:</h3></div>
+<!--Form control-->
+<span></span>
+<div class="container-fluid px-5 col-md-8">
+	<select class="form-control px-3 ">
+		<option>Czerwiec</option>
+		<option>Kwiecień</option>
+		<option>Maj</option>
+	  </select>
+</div>
+<!--Desc-->
+<div class="container-fluid col-10 mt-1 px-5">
+	<hr>
+	<div class="row">
+		<div class="col text-center border">
+			<p>Dzień</p>
+		</div>
+		<div class="col text-center border">
+			<p>Prognoza</p>
+		</div>
+		<div class="col text-center border">
+			<p>Temperatura</p>
+		</div>
+		<div class="col text-center border d-none d-md-block">
+			<p>Wiatr</p>
+		</div>
+		<div class="col text-center border d-none d-lg-block">
+			<p>Opady</p>
+		</div>
+	</div>
+<!--d/row1-->
+	<div class="row">
+		<div class="col text-center bg-info">
+			<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+				<h5 class="display-5">Poniedziałek<br>01.06.2022r</h5>
+			</div>
+		</div>
+		<div class="col text-center bg-info ml-1">
+			<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+				<img class="img-fluid" src="img/Weather_forecast/miniaturki/cloudymini125x125.png"  alt="">
+			</div>
+		</div>
+		<div class="col text-center bg-info ml-1">
+			<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+				<h5 class="display-5">15℃</h5>
+			</div>
+		</div>
+		<div class="col text-center bg-info ml-1 d-none d-md-block">
+			<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+				<h5 class="display-5">10km/h</h5>
+			</div>
+		</div>
+		<div class="col text-center bg-info ml-1 d-none d-lg-block">
+			<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+				<h5 class="display-5">0%</h5>
+			</div>
+		</div>
+	</div>
+	<!--d/row2-->
+	<div class="row">
+		<div class="col text-center bg-info mt-1">
+			<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+				<h5 class="display-5">Wtorek<br>02.06.2022r</h5>
+			</div>
+		</div>
+		<div class="col text-center bg-info mt-1 ml-1">
+			<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+				<img class="img-fluid" src="img/Weather_forecast/miniaturki/Sunmini125x125.png"  alt="">
+			</div>
+		</div>
+		<div class="col text-center bg-info mt-1 ml-1">
+			<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+				<h5 class="display-5">15℃</h5>
+			</div>
+		</div>
+		<div class="col text-center bg-info mt-1 ml-1 d-none d-md-block">
+			<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+				<h5 class="display-5">10km/h</h5>
+			</div>
+		</div>
+		<div class="col text-center bg-info mt-1 ml-1 d-none d-lg-block">
+			<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+				<h5 class="display-5">0%</h5>
+			</div>
+		</div>
+	</div>
+	<!--d/row3-->
+	<div class="row">
+		<div class="col text-center bg-info mt-1">
+				<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+					<h5 class="display-5">Środa<br>03.06.2022r</h5>
+				</div>
+		</div>
+		<div class="col text-center bg-info mt-1 ml-1">
+			<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+				<img class="img-fluid" src="img/Weather_forecast/miniaturki/Sunmini125x125.png"  alt="">
+			</div>
+		</div>
+		<div class="col text-center bg-info mt-1 ml-1">
+			<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+				<h5 class="display-5">15℃</h5>
+			</div>
+		</div>
+		<div class="col text-center bg-info mt-1 ml-1 d-none d-md-block">
+			<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+				<h5 class="display-5">10km/h</h5>
+			</div>
+		</div>
+
+		<div class="col text-center bg-info mt-1 ml-1 d-none d-lg-block">
+			<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+				<h5 class="display-5">0%</h5>
+			</div>
+		</div>
+	</div>
+<!--d/row4-->
+	<div class="row">
+		<div class="col text-center bg-info mt-1">
+				<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+					<h5 class="display-5">Czwartek<br>04.06.2022r</h5>
+				</div>
+		</div>
+		<div class="col text-center bg-info mt-1 ml-1">
+			<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+				<img class="img-fluid" src="img/Weather_forecast/miniaturki/Sunmini125x125.png"  alt="">
+			</div>
+		</div>
+		<div class="col text-center bg-info mt-1 ml-1">
+			<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+				<h5 class="display-5">15℃</h5>
+			</div>
+		</div>
+		<div class="col text-center bg-info mt-1 ml-1 d-none d-md-block">
+			<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+				<h5 class="display-5">10km/h</h5>
+			</div>
+		</div>
+			<div class="col text-center bg-info mt-1 ml-1 d-none d-lg-block">
+				<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+					<h5 class="display-5">0%</h5>
+				</div>
+			</div>
+	</div>
+<!--d/row5-->
+	<div class="row">
+		<div class="col text-center bg-info mt-1">
+				<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+					<h5 class="display-5">Piątek<br>05.06.2022r</h5>
+				</div>
+		</div>
+		<div class="col text-center bg-info mt-1 ml-1">
+			<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+				<img class="img-fluid" src="img/Weather_forecast/miniaturki/Sunmini125x125.png"  alt="">
+			</div>
+		</div>
+		<div class="col text-center bg-info mt-1 ml-1">
+			<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+				<h5 class="display-5">15℃</h5>
+			</div>
+		</div>
+		<div class="col text-center bg-info mt-1 ml-1 d-none d-md-block">
+			<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+				<h5 class="display-5">10km/h</h5>
+			</div>
+		</div>
+			<div class="col text-center bg-info mt-1 ml-1 d-none d-lg-block">
+				<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+					<h5 class="display-5">0%</h5>
+				</div>
+			</div>
+	</div>
+<!--d/row6-->
+	<div class="row">
+		<div class="col text-center bg-info mt-1">
+				<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+					<h5 class="display-5">Sobota<br>06.06.2022r</h5>
+				</div>
+		</div>
+		<div class="col text-center bg-info mt-1 ml-1">
+			<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+				<img class="img-fluid" src="img/Weather_forecast/miniaturki/Sunmini125x125.png"  alt="">
+			</div>
+		</div>
+		<div class="col text-center bg-info mt-1 ml-1">
+			<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+				<h5 class="display-5">15℃</h5>
+			</div>
+		</div>
+		<div class="col text-center bg-info mt-1 ml-1 d-none d-md-block">
+			<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+				<h5 class="display-5">10km/h</h5>
+			</div>
+		</div>
+			<div class="col text-center bg-info mt-1 ml-1 d-none d-lg-block">
+				<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+					<h5 class="display-5">0%</h5>
+				</div>
+			</div>
+	</div>
+<!--d/row7-->
+	<div class="row">
+		<div class="col text-center bg-info mt-1">
+				<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+					<h5 class="display-5">Niedziela<br>07.06.2022r</h5>
+				</div>
+		</div>
+		<div class="col text-center bg-info mt-1 ml-1">
+			<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+				<img class="img-fluid" src="img/Weather_forecast/miniaturki/Sunmini125x125.png"  alt="">
+			</div>
+		</div>
+		<div class="col text-center bg-info mt-1 ml-1">
+			<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+				<h5 class="display-5">15℃</h5>
+			</div>
+		</div>
+		<div class="col text-center bg-info mt-1 ml-1 d-none d-md-block">
+			<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+				<h5 class="display-5">10km/h</h5>
+			</div>
+		</div>
+			<div class="col text-center bg-info mt-1 ml-1 d-none d-lg-block">
+				<div class="d-flex align-items-center justify-content-center" style="height: 125px">
+					<h5 class="display-5">0%</h5>
+				</div>
+			</div>
+	</div>
+</section>
+<hr><hr>
+<!--- Footer -->
+<section>
+	<footer>
+		<div class="container-fluid pt-5 bg-info">
+			<div class="row text-center">
+				<div class="col-md-4">
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+					<p>Kontakt w Sprawie Handlowej</p>
+					<p>Numer tel.: 555-555-555</p>
+					<p>Email: handel@gmail.com</p>
+					<p>Adres: Miasto, Ulica, kod-pocztowy</p>
+				</div>
+				<div class="col-md-4">
+					<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77312.98920326754!2d15.17051322425736!3d52.731634592519704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47071f0a5a4118b7%3A0x5dd10df3cb5799dd!2sGorz%C3%B3w%20Wielkopolski!5e0!3m2!1spl!2spl!4v1651509333654!5m2!1spl!2spl" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+				</div>
+				<div class="col-md-4">
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+					<p>Kontakt w sprawie partnerstwa</p>
+					<p>Numer tel.: 777-777-777</p>
+					<p>Email: partnerstwo@gmail.com</p>
+					<p>Adres: Miasto, Ulica, kod-pocztowy</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</section>
+<div class="fixed-bottom">
+	<input type="checkbox" id="check"> <label class="chat-btn" for="check"> <i class="fa fa-commenting-o comment"></i> <i class="fa fa-close close"></i> </label>
+	<div class="wrapper"> 
+		<div class="header"> <p>Porozmawiajmy!</p></div> 
+		<div class="text-center p-2"><span>Wypełnij pola i uzyskaj pomoc.</span></div>
+		<div class="chat-form"> <input type="text" class="form-control" placeholder="Name"> <input type="text" class="form-control" placeholder="Email"> <textarea class="form-control" placeholder="Your Text Message"></textarea> <button class="btn btn-success btn-block">Zatwierdź</button> </div> 
+	</div>
+</div>
+</body>
+</html>
